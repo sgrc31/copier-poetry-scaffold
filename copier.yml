@@ -1,0 +1,50 @@
+_subdirectory: src
+
+# Configure jinja2 defaults to make syntax highlighters lives easier
+_templates_suffix: .jinja
+_envops:
+  block_end_string: "%}"
+  block_start_string: "{%"
+  comment_end_string: "#}"
+  comment_start_string: "{#"
+  keep_trailing_newline: true
+  variable_end_string: "}}"
+  variable_start_string: "{{"
+
+_jinja_extensions:
+  - jinja2_time.TimeExtension
+
+# questions
+project_name:
+  type: str
+  help: Project name using dashses (repo-name)
+
+package_name:
+  type: str
+  help: Package name in snake case
+  default: "{{ project_name|lower|replace('-', '_') }}"
+
+friendly_name:
+  type: str
+  help: Project name in natural language
+  default: "{{ project_name.replace('-', ' ').title() }}"
+
+author_fullname:
+  type: str
+  help: Author's fullname
+  default: Simone Guercio
+
+author_email:
+  type: str
+  help: Author's email
+  default: s.guercio@gmail.com
+
+package_version:
+  type: str
+  default: 0.1.0
+
+copyright_year:
+  type: int
+  default: 2020
+
+
