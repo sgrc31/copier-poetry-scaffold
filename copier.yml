@@ -45,6 +45,6 @@ package_version:
 
 copyright_year:
   type: int
-  default: 2020
+  default: 2022
 
 
