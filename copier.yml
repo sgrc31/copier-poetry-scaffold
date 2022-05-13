@@ -29,6 +29,10 @@ friendly_name:
   help: Project name in natural language
   default: "{{ project_name.replace('-', ' ').title() }}"
 
+project_description:
+  type: str
+  default: To be provided yet
+
 author_fullname:
   type: str
   help: Author's fullname
@@ -47,4 +51,12 @@ copyright_year:
   type: int
   default: 2022
 
-
+project_license:
+  choices:
+    - MIT
+    - Apache-2.0
+    - GPL-3.0-or-later
+    - Unlicense
+  type: str
+  help: choose project's license
+  default: GPL-3.0-or-later
