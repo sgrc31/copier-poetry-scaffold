@@ -8,7 +8,7 @@ This template was inspired by Claudio Jolowicz's [Hypermodern Python](https://me
 - testing with pytest, pytest-cov and pytest-mock
 - git hooks via pre-commit
 
-## How to users
+## How to use
 To use this template you'll need copier installed on your system (either via pip, pipx or your package manager)
 ```
 copier gl:sgrc31/copier-poetry-scaffold .
