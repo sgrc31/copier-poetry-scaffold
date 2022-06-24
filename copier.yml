@@ -60,3 +60,7 @@ project_license:
   type: str
   help: choose project's license
   default: GPL-3.0-or-later
+
+_tasks:
+  - "cd {{ project_name }} && poetry install"
+  - "cd {{ project_name }} && git init --initial-branch=main"
